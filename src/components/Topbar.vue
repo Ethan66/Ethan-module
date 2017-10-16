@@ -18,7 +18,7 @@
   header{
     display: flex; min-height: 80px; background: #fff; margin-bottom: 20px;
     >.log{
-      min-width: 20em; padding: 26px 0;
+      min-width: 24em; padding: 26px 0;
       &:after{
         display: block; content: ""; height: 100%; border-right: 1px solid $borderCor;
       }
