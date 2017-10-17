@@ -4,10 +4,10 @@
       <li>
         <a class="title subUl" href="#">Navigation</a>
         <ul class="list">
-          <li class="on"><a href="#">Breadcrumb<span>面包屑</span></a></li>
-          <li><a href="#">Dropdown<span>下拉菜单</span></a></li>
-          <li><a href="#">Menu<span>导航</span></a></li>
-          <li><a href="#">Steps<span>步骤条</span></a></li>
+          <li class="on"><a href="#crumb">Breadcrumb<span>面包屑</span></a></li>
+          <li><a href="#dropdown">Dropdown<span>下拉菜单</span></a></li>
+          <li><a href="#menu">Menu<span>导航</span></a></li>
+          <li><a href="#steps">Steps<span>步骤条</span></a></li>
         </ul>
       </li>
     </ul>

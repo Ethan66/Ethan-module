@@ -29,9 +29,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   display: flex; flex-direction: column; height: 100vh;
   >main{
-    margin: 0 2em; flex: 1; background: #fff; border-radius: 5px; padding: 20px 0; display: flex;
+    margin: 0 2em; flex: 1; background: #fff; border-radius: 5px; display: flex;
     >.content{
-      height: 100%; border-left: 1px solid $borderCor; flex: 1; padding-left: 2em; padding-right: 2em;
+      height: 100%; border-left: 1px solid $borderCor; flex: 1; padding: 20px 0 20px 2em; padding-right: 2em;
+      overflow-y: scroll;
     }
   }
 

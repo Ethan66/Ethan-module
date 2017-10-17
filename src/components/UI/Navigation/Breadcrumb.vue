@@ -1,5 +1,5 @@
 <template>
-  <div id="crumb">
+  <div class="e-crumb">
     <a href="/">首页</a>
     <a href="">酒店</a>
     <a href="">杭州</a>
@@ -9,12 +9,12 @@
 
 <style lang="scss">
   $borderCor:#e9e9e9; $hoverCor:#108ee9;
-  #crumb{
+  .e-crumb{
     width: 100%;
     a{
       color: #666;
       &::after{
-        display: inline; content: ">"; padding: 0 6px;
+        display: inline; content: ">"; padding: 0 6px; color: #333;
       }
       &:hover{
         color: $hoverCor;
