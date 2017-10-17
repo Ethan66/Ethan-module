@@ -46,6 +46,14 @@
         <input type="password" />
       </label>
     </div>
+    <div class="line marginL">
+      <p class="min-text">
+        <label>
+          <input type="checkbox" />I have read the <a href="">agreement</a>
+        </label>
+      </p>
+      <input type="submit" value="Register" />
+    </div>
   </form>
 </template>
 
@@ -84,6 +92,28 @@
       transition: all .3s;
       &:hover{
         color: $hoverCor; border-color: $hoverCor; cursor: pointer;
+      }
+    }
+    input[type=submit]{
+      width: auto; padding: 0 12px; text-indent: 0; background: $hoverCor; color: #fff;
+      outline: 0; border-color: $hoverCor; cursor: pointer;
+    }
+    input[type=checkbox]{
+      width: auto; margin-right: 10px; vertical-align: -1px;
+      &:focus{
+        box-shadow: none;
+      }
+    }
+  .marginL{
+    margin-left: 10em;
+  }
+    .min-text {
+      margin-bottom: 10px; color: #666;
+      label {
+        width: auto;
+      }
+      a{
+        color: $hoverCor;
       }
     }
   }

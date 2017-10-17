@@ -110,8 +110,8 @@
     </div>
     <div id="register">
       <div class="headline">
-        <h2 class="tit">Steps步骤条<i class="iconfont icon-timu"></i></h2>
-        <p>引导用户按照流程完成任务的导航条。</p>
+        <h2 class="tit">表单域<i class="iconfont icon-timu"></i></h2>
+        <p>用户注册和登录页面</p>
       </div>
       <div class="code">
         <h2 class="tit">功能演示<i class="iconfont icon-gongneng"></i></h2>
@@ -121,12 +121,12 @@
           </div>
           <div class="notice">
             <h4>备注<i class="iconfont icon-z-pencil"></i></h4>
-            <p>使用flex布局</p>
+            <p>使用float布局</p>
           </div>
         </div>
         <div class="col-12 border">
           <div class="show">
-            <Step2 />
+            <Login />
           </div>
           <div class="notice">
             <h4>备注<i class="iconfont icon-z-pencil"></i></h4>
@@ -148,11 +148,12 @@
   import Step1 from './UI/Navigation/Step1'
   import Step2 from './UI/Navigation/Step2'
   import Register from './UI/DataEnter/Register'
+  import Login from './UI/DataEnter/Login'
   export default {
     name:"Content",
     components:{
       Breadcrumb,Breadcrumb2,Dropdown1,Dropdown2,Menu1,Menu2,Step1,Step2,
-      Register
+      Register,Login
     }
   }
 </script>
