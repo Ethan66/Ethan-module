@@ -79,12 +79,12 @@
     input{
       border: 1px solid #ddd; border-radius: 4px; line-height: 30px; width: 20em; text-indent: 10px;
       box-shadow: 0 0 0 2px #fff;
-      transition: border-color .6s,box-shadow .6s;
+      transition: border-color .6s,box-shadow .3s;
       &:hover{
         border-color: $hoverCor;
       }
       &:focus{
-        box-shadow: 0 0 0 2px rgba(16,142,233,.2);
+        box-shadow: 0 0 0 2px rgba(16,142,233,.2); border-color: #eee;
       }
     }
     button{

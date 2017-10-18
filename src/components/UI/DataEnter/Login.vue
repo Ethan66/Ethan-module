@@ -2,11 +2,11 @@
   <form class="e-login">
     <div class="line">
       <label><i class="iconfont icon-user"></i></label>
-      <input type="text"  />
+      <input type="text" placeholder="username" />
     </div>
     <div class="line">
       <label><i class="iconfont icon-mima"></i></label>
-      <input type="text"  />
+      <input type="text" placeholder="password" />
     </div>
     <div class="line text">
       <p>
@@ -18,6 +18,9 @@
     </div>
     <div class="line">
       <input type="submit" value="Login" />
+    </div>
+    <div class="line">
+      <a class="registerBtn" href="">Register now</a>
     </div>
   </form>
 </template>
@@ -34,16 +37,31 @@
     }
     input{
       border: 1px solid #ddd; border-radius: 4px; line-height: 30px; width: 20em; text-indent: 10px;
-      box-shadow: 0 0 0 2px #fff;
-      transition: border-color .6s,box-shadow .6s;
+      box-shadow: 0 0 0 2px #fff; text-indent: 26px;
+      transition: border-color .6s,box-shadow .3s;
       &:hover{
         border-color: $hoverCor;
       }
       &:focus{
-        box-shadow: 0 0 0 2px rgba(16,142,233,.2);
+        box-shadow: 0 0 0 2px rgba(16,142,233,.2); border-color: #eee;
       }
     }
-    input[type=submit]{
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color: #ccc;
+    }
+
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color: #ccc;
+    }
+
+    input:-ms-input-placeholder{
+      color: #ccc;
+    }
+
+    input::-webkit-input-placeholder{
+      color: #ccc;
+    }
+    input[type=submit],.registerBtn{
       padding: 0 12px; text-indent: 0; background: $hoverCor; color: #fff;
       outline: 0; border-color: $hoverCor; cursor: pointer; transition: all .3s;
       &:hover{
@@ -64,6 +82,9 @@
       a{
         float: right; color: $hoverCor;
       }
+    }
+    .registerBtn{
+      display: block; line-height: 30px; border: 1px solid $hoverCor; border-radius: 4px; text-align: center;
     }
   }
 </style>
