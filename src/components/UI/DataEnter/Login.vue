@@ -37,7 +37,7 @@
     }
     input{
       border: 1px solid #ddd; border-radius: 4px; line-height: 30px; width: 20em; text-indent: 10px;
-      box-shadow: 0 0 0 2px #fff; text-indent: 26px;
+      box-shadow: 0 0 0 2px transparent; text-indent: 26px;
       transition: border-color .6s,box-shadow .3s;
       &:hover{
         border-color: $hoverCor;
